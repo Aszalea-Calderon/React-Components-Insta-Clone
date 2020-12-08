@@ -1,4 +1,5 @@
 /* 
+//*This needs all the rest of the functions so that it can be passed to the kids
   Start here and work your way down the nested components.
   Not all files in the project need code added.
   Look at each file to see what props need to be passed!
@@ -15,6 +16,8 @@ import Styles from "./App.css"; //TODO?
 import DummyData from "./dummy-data"; //Does this need to be import DummyData from './dummy-data" instead?
 
 //end all imports
+//*alskdfje
+//TODO adskfjalsdfkj;alk🍝🎂
 
 //This is our App
 const App = () => {
@@ -95,9 +98,11 @@ const App = () => {
       {/* Add SearchBar and Posts here to render them */}
       {/* Check the implementation of each component, to see what props they require, if any! */}
       <SearchBar />
-      <Posts likePost={likePost} />
+      <Posts likePost={likePost} posts={posts} />
+      {/*This passes them down*/}
     </div>
   );
 };
 
+//The {} is what holds the import from the top...
 export default App;
