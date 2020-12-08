@@ -14,8 +14,11 @@ const Post = (props) => {
         <img alt="post thumbnail" className="post-image" src={post.imageUrl} />
       </div>
       {/* Is LikeSection getting all the props it needs to work correctly? */}
-      <LikeSection likePost={() => likePost(post.id)} />
-      {/* Comments also wants its props! */}
+      <LikeSection
+        likePost={() => likePost(post.id)}
+        numberOfLikes={post.likes}
+      />
+
       <Comments comments={props.post.comments} />
     </div>
   );
