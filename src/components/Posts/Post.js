@@ -19,7 +19,7 @@ const Post = (props) => {
         numberOfLikes={post.likes}
       />
 
-      <Comments comments={props.post.comments} />
+      <Comments comments={post.comments} />
     </div>
   );
 };
